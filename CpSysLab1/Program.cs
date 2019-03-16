@@ -19,6 +19,15 @@ namespace CpSysLab1
                 Console.WriteLine($"{fileName} \n {TextAnalyzer.Analyze(textDirectory+fileName)} ");
             }
 
+            string testFilePath = @"..\..\SampleText\EncodingTest.txt";
+            string customEncodedPath = @"..\..\SampleText\CustomBase64.txt";
+            Base64Encoder.Encode(testFilePath, customEncodedPath);
+
+            string customEncoding = File.ReadAllText(customEncodedPath);
+            string base64Encoding = Convert.ToBase64String(File.ReadAllBytes(testFilePath));
+            Console.WriteLine($"Custom base64: {customEncoding } \n\nConvert.Base64: {base64Encoding}\n");
+            Console.WriteLine($"Base64 check: {base64Encoding.Equals(customEncoding)}");
+
             Console.ReadKey();
         }
     }
