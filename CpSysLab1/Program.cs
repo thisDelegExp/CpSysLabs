@@ -9,7 +9,7 @@ namespace CpSysLab1
 {
     class Program
     {
-        private static readonly string[] sampleTexts = new [] {"AngularArchitectureOverview.txt", "TeenageMutantNinjaTurtlesThemeSong.txt", "BattleOfWaterloo.txt" };
+        private static readonly string[] sampleTexts = new [] {"AngularArchitectureOverview.txt", "TeenageMutantNinjaTurtles.txt", "BattleOfWaterloo.txt" };
         private static readonly string textDirectory = @"..\..\SampleText\";
         static void Main(string[] args)
         {
