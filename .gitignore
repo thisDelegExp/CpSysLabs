@@ -260,3 +260,7 @@ paket-files/
 __pycache__/
 *.pyc
 /CpSysLab1/CompressedSampleText
+/CpSysLab1
+/CpSysLabs.sln
+/.gitignore
+/.gitattributes
